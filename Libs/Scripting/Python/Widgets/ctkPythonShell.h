@@ -86,6 +86,7 @@ public:
 
 signals:
   void executing(bool);
+  void executedCommand( const QString& );
 
 public slots:
   void clear();

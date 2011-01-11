@@ -488,6 +488,8 @@ void ctkPythonShell::onExecuteCommand(const QString& Command)
     indent = regExp.cap(1);
     }
   this->Implementation->promptForInput(indent);
+
+  emit this->executedCommand(Command);
 }
 
 //----------------------------------------------------------------------------
